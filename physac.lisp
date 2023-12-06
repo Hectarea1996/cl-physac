@@ -137,15 +137,15 @@
 
 (setf (documentation 'make-physics-shape 'function)
       "physics-shape's constructor."
-      (documentation 'polygon-shape-type 'function)
+      (documentation 'physics-shape-type 'function)
       "polygon-shape's type accessor."
-      (documentation 'polygon-data-body 'function)
+      (documentation 'physics-shape-body 'function)
       "polygon-shape's body accessor."
-      (documentation 'polygon-data-radius 'function)
+      (documentation 'physics-shape-radius 'function)
       "polygon-shape's radius accessor."
-      (documentation 'polygon-data-transform 'function)
+      (documentation 'physics-shape-transform 'function)
       "polygon-shape's transform accessor."
-      (documentation 'polygon-data-vertex-data 'function)
+      (documentation 'physics-shape-vertex-data 'function)
       "polygon-shape's vertex-data accessor.")
 
 (define-conversion-into-foreign-memory ((object physics-shape) (type physics-shape-type) pointer)
