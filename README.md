@@ -8,7 +8,7 @@ Welcome to ``` cl-physac ```\!\!
 <a id="header-adp-github-headertag628"></a>
 ## Installation
 
-First\, you need to install Physac\. However\, the project does not generate any shared libraries\, so you should instal Physac from [this fork](https://github.com/Hectarea1996/Physac)\. Follow the installation instructions\:
+First\, you need to install Physac\. However\, the project does not generate any shared libraries\, so you should install Physac from [this fork](https://github.com/Hectarea1996/Physac)\. Follow the installation instructions\:
 
 `````shell
 cd /path/to/your/repositories

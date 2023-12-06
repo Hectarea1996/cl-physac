@@ -89,6 +89,13 @@
   positions
   normals)
 
+(setf (documentation 'make-polygon-data 'function)
+      "polygon-data's constructor."
+      (documentation 'polygon-data-positions 'function)
+      "polygon-data's positions accessor."
+      (documentation 'polygon-data-normals 'function)
+      "polygon-data's normals accessor.")
+
 (define-conversion-into-foreign-memory ((object polygon-data) (type polygon-data-type) pointer)
   (with-foreign-slots ((vertex-count (:pointer positions) (:pointer normals)) pointer (:struct %polygon-data))
     (let ((vertices-count (min (length (polygon-data-positions object)) (length (polygon-data-normals object)))))
@@ -127,6 +134,19 @@
   radius
   transform
   vertex-data)
+
+(setf (documentation 'make-physics-shape 'function)
+      "physics-shape's constructor."
+      (documentation 'polygon-shape-type 'function)
+      "polygon-shape's type accessor."
+      (documentation 'polygon-data-body 'function)
+      "polygon-shape's body accessor."
+      (documentation 'polygon-data-radius 'function)
+      "polygon-shape's radius accessor."
+      (documentation 'polygon-data-transform 'function)
+      "polygon-shape's transform accessor."
+      (documentation 'polygon-data-vertex-data 'function)
+      "polygon-shape's vertex-data accessor.")
 
 (define-conversion-into-foreign-memory ((object physics-shape) (type physics-shape-type) pointer)
   (with-foreign-slots ((type body radius transform vertex-data) pointer (:struct %physics-shape))
@@ -190,6 +210,7 @@
         (func-name (intern (concatenate 'string "PHYSICS-BODY-" (string slot)))))
     `(progn
        (defun ,func-name (,object)
+         ,(concatenate 'string "physics-body's " (string-downcase (symbol-name slot)) " accessor")
          (let ((,data (physics-body-physics-body-data ,object)))
            (foreign-slot-value ,data '(:struct %physics-body-data) ',slot)))
        (defun (setf ,func-name) (,value ,object)

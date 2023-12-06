@@ -92,13 +92,17 @@ Returns true if physics thread is currently enabled
                                           ((:transform transform) nil)
                                           ((:vertex-data vertex-data) nil))
 
-_Undocumented_
+`````text
+physics-shape's constructor.
+`````
 
 <a id="function-physac-make-polygon-data"></a>
 #### Function: physac:make-polygon-data (&key ((:positions positions) nil)
                                          ((:normals normals) nil))
 
-_Undocumented_
+`````text
+polygon-data's constructor.
+`````
 
 <a id="function-physac-physics-add-force"></a>
 #### Function: physac:physics-add-force (body force)
@@ -117,77 +121,107 @@ Adds a angular force to a physics body
 <a id="function-physac-physics-body-angular-velocity"></a>
 #### Function: physac:physics-body-angular-velocity (object102)
 
-_Undocumented_
+`````text
+physics-body's angular-velocity accessor
+`````
 
 <a id="function-physac-physics-body-dynamic-friction"></a>
 #### Function: physac:physics-body-dynamic-friction (object294)
 
-_Undocumented_
+`````text
+physics-body's dynamic-friction accessor
+`````
 
 <a id="function-physac-physics-body-enabled"></a>
 #### Function: physac:physics-body-enabled (object26)
 
-_Undocumented_
+`````text
+physics-body's enabled accessor
+`````
 
 <a id="function-physac-physics-body-force"></a>
 #### Function: physac:physics-body-force (object84)
 
-_Undocumented_
+`````text
+physics-body's force accessor
+`````
 
 <a id="function-physac-physics-body-freeze-orient"></a>
 #### Function: physac:physics-body-freeze-orient (object386)
 
-_Undocumented_
+`````text
+physics-body's freeze-orient accessor
+`````
 
 <a id="function-physac-physics-body-id"></a>
 #### Function: physac:physics-body-id (object1)
 
-_Undocumented_
+`````text
+physics-body's id accessor
+`````
 
 <a id="function-physac-physics-body-is-grounded"></a>
 #### Function: physac:physics-body-is-grounded (object364)
 
-_Undocumented_
+`````text
+physics-body's is-grounded accessor
+`````
 
 <a id="function-physac-physics-body-orient"></a>
 #### Function: physac:physics-body-orient (object150)
 
-_Undocumented_
+`````text
+physics-body's orient accessor
+`````
 
 <a id="function-physac-physics-body-position"></a>
 #### Function: physac:physics-body-position (object48)
 
-_Undocumented_
+`````text
+physics-body's position accessor
+`````
 
 <a id="function-physac-physics-body-restitution"></a>
 #### Function: physac:physics-body-restitution (object318)
 
-_Undocumented_
+`````text
+physics-body's restitution accessor
+`````
 
 <a id="function-physac-physics-body-shape"></a>
 #### Function: physac:physics-body-shape (object408)
 
-_Undocumented_
+`````text
+physics-body's shape accessor
+`````
 
 <a id="function-physac-physics-body-static-friction"></a>
 #### Function: physac:physics-body-static-friction (object270)
 
-_Undocumented_
+`````text
+physics-body's static-friction accessor
+`````
 
 <a id="function-physac-physics-body-torque"></a>
 #### Function: physac:physics-body-torque (object126)
 
-_Undocumented_
+`````text
+physics-body's torque accessor
+`````
 
 <a id="function-physac-physics-body-use-gravity"></a>
 #### Function: physac:physics-body-use-gravity (object342)
 
-_Undocumented_
+`````text
+physics-body's use-gravity accessor
+`````
 
 <a id="function-physac-physics-body-velocity"></a>
 #### Function: physac:physics-body-velocity (object66)
 
-_Undocumented_
+`````text
+physics-body's velocity accessor
+`````
 
 <a id="function-physac-physics-shape-body"></a>
 #### Function: physac:physics-shape-body (sb-kernel:instance)
@@ -224,12 +258,16 @@ Shatters a polygon shape physics body to little physics bodies with explosion fo
 <a id="function-physac-polygon-data-normals"></a>
 #### Function: physac:polygon-data-normals (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-data's normals accessor.
+`````
 
 <a id="function-physac-polygon-data-positions"></a>
 #### Function: physac:polygon-data-positions (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-data's positions accessor.
+`````
 
 <a id="function-physac-set-physics-body-rotation"></a>
 #### Function: physac:set-physics-body-rotation (body radians)
@@ -248,4 +286,6 @@ Sets physics global gravity force
 <a id="function-physac-with-physics"></a>
 #### Macro: physac:with-physics (&body body)
 
-_Undocumented_
+`````text
+Encloses the body with the initialization and unitialization of physics simulation.
+`````

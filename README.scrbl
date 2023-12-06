@@ -9,7 +9,7 @@ Welcome to @code{cl-physac}!!
 
 @subheader{Installation}
 
-First, you need to install Physac. However, the project does not generate any shared libraries, so you should instal Physac from @link[:address "https://github.com/Hectarea1996/Physac"]{this fork}. Follow the installation instructions:
+First, you need to install Physac. However, the project does not generate any shared libraries, so you should install Physac from @link[:address "https://github.com/Hectarea1996/Physac"]{this fork}. Follow the installation instructions:
 
 @code-block[:lang "shell"]{
 cd /path/to/your/repositories
