@@ -1,9 +1,9 @@
 
 (defpackage #:physac
   (:use #:cl #:cffi)
-  (:export #:polygon-data-positions #:polygon-data-normals 
+  (:export #:make-polygon-data #:polygon-data-positions #:polygon-data-normals 
 
-           #:physics-shape-type #:physics-shape-body #:physics-shape-radius
+           #:make-physics-shape #:physics-shape-type #:physics-shape-body #:physics-shape-radius
            #:physics-shape-transform #:physics-shape-vertex-data
 
            #:physics-body-id #:physics-body-enabled #:physics-body-position #:physics-body-velocity
