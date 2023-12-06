@@ -186,10 +186,15 @@
 (defmacro define-physics-body-accessor (slot)
   (let ((data (gensym "DATA"))
         (object (gensym "OBJECT"))
+        (value (gensym "VALUE"))
         (func-name (intern (concatenate 'string "PHYSICS-BODY-" (string slot)))))
-    `(defun ,func-name (,object)
-       (let ((,data (physics-body-physics-body-data ,object)))
-         (foreign-slot-value ,data '(:struct %physics-body-data) ',slot)))))
+    `(progn
+       (defun ,func-name (,object)
+         (let ((,data (physics-body-physics-body-data ,object)))
+           (foreign-slot-value ,data '(:struct %physics-body-data) ',slot)))
+       (defun (setf ,func-name) (,value ,object)
+         (let ((,data (physics-body-physics-body-data ,object)))
+           (setf (foreign-slot-value ,data '(:struct %physics-body-data) ',slot) ,value))))))
 
 (defmacro define-physics-body-accessors (&rest slots)
   (let ((exprs (loop for slot in slots
