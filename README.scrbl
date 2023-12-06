@@ -13,6 +13,7 @@ First, you need to install Physac. However, the project does not generate any sh
 
 @code-block[:lang "shell"]{
 cd /path/to/your/repositories
+git clone https://github.com/Hectarea1996/Physac.git
 mkdir build && cd build
 cmake ..
 make
