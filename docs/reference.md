@@ -226,27 +226,37 @@ physics-body's velocity accessor
 <a id="function-physac-physics-shape-body"></a>
 #### Function: physac:physics-shape-body (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-shape's body accessor.
+`````
 
 <a id="function-physac-physics-shape-radius"></a>
 #### Function: physac:physics-shape-radius (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-shape's radius accessor.
+`````
 
 <a id="function-physac-physics-shape-transform"></a>
 #### Function: physac:physics-shape-transform (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-shape's transform accessor.
+`````
 
 <a id="function-physac-physics-shape-type"></a>
 #### Function: physac:physics-shape-type (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-shape's type accessor.
+`````
 
 <a id="function-physac-physics-shape-vertex-data"></a>
 #### Function: physac:physics-shape-vertex-data (sb-kernel:instance)
 
-_Undocumented_
+`````text
+polygon-shape's vertex-data accessor.
+`````
 
 <a id="function-physac-physics-shatter"></a>
 #### Function: physac:physics-shatter (body position)
