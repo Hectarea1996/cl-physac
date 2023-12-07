@@ -205,7 +205,7 @@
 
 (defmacro define-physics-body-accessor (slot)
   (let ((data (gensym "DATA"))
-        (object (gensym "OBJECT"))
+        (object (make-symbol "BODY"))
         (value (gensym "VALUE"))
         (func-name (intern (concatenate 'string "PHYSICS-BODY-" (string slot)))))
     `(progn

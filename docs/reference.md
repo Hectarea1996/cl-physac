@@ -2,7 +2,7 @@
 # cl\-physac reference
 
 <a id="function-physac-close-physics"></a>
-#### Function: physac:close-physics nil
+#### Function: physac:close-physics ()
 
 `````text
 Unitializes physics pointers and closes physics loop thread
@@ -37,7 +37,7 @@ Unitializes and destroy a physics body
 `````
 
 <a id="function-physac-get-physics-bodies-count"></a>
-#### Function: physac:get-physics-bodies-count nil
+#### Function: physac:get-physics-bodies-count ()
 
 `````text
 Returns the current amount of created physics bodies
@@ -72,33 +72,28 @@ Returns the amount of vertices of a physics body shape
 `````
 
 <a id="function-physac-init-physics"></a>
-#### Function: physac:init-physics nil
+#### Function: physac:init-physics ()
 
 `````text
 Initializes physics values, pointers and creates physics loop thread
 `````
 
 <a id="function-physac-is-physics-enabled"></a>
-#### Function: physac:is-physics-enabled nil
+#### Function: physac:is-physics-enabled ()
 
 `````text
 Returns true if physics thread is currently enabled
 `````
 
 <a id="function-physac-make-physics-shape"></a>
-#### Function: physac:make-physics-shape (&key ((:type type) nil)
-                                          ((:body body) nil)
-                                          ((:radius radius) nil)
-                                          ((:transform transform) nil)
-                                          ((:vertex-data vertex-data) nil))
+#### Function: physac:make-physics-shape (&key ((:type type) nil) ((:body body) nil) ((:radius radius) nil) ((:transform transform) nil) ((:vertex-data vertex-data) nil))
 
 `````text
 physics-shape's constructor.
 `````
 
 <a id="function-physac-make-polygon-data"></a>
-#### Function: physac:make-polygon-data (&key ((:positions positions) nil)
-                                         ((:normals normals) nil))
+#### Function: physac:make-polygon-data (&key ((:positions positions) nil) ((:normals normals) nil))
 
 `````text
 polygon-data's constructor.
@@ -119,140 +114,140 @@ Adds a angular force to a physics body
 `````
 
 <a id="function-physac-physics-body-angular-velocity"></a>
-#### Function: physac:physics-body-angular-velocity (object102)
+#### Function: physac:physics-body-angular-velocity (body)
 
 `````text
 physics-body's angular-velocity accessor
 `````
 
 <a id="function-physac-physics-body-dynamic-friction"></a>
-#### Function: physac:physics-body-dynamic-friction (object294)
+#### Function: physac:physics-body-dynamic-friction (body)
 
 `````text
 physics-body's dynamic-friction accessor
 `````
 
 <a id="function-physac-physics-body-enabled"></a>
-#### Function: physac:physics-body-enabled (object26)
+#### Function: physac:physics-body-enabled (body)
 
 `````text
 physics-body's enabled accessor
 `````
 
 <a id="function-physac-physics-body-force"></a>
-#### Function: physac:physics-body-force (object84)
+#### Function: physac:physics-body-force (body)
 
 `````text
 physics-body's force accessor
 `````
 
 <a id="function-physac-physics-body-freeze-orient"></a>
-#### Function: physac:physics-body-freeze-orient (object386)
+#### Function: physac:physics-body-freeze-orient (body)
 
 `````text
 physics-body's freeze-orient accessor
 `````
 
 <a id="function-physac-physics-body-id"></a>
-#### Function: physac:physics-body-id (object1)
+#### Function: physac:physics-body-id (body)
 
 `````text
 physics-body's id accessor
 `````
 
 <a id="function-physac-physics-body-is-grounded"></a>
-#### Function: physac:physics-body-is-grounded (object364)
+#### Function: physac:physics-body-is-grounded (body)
 
 `````text
 physics-body's is-grounded accessor
 `````
 
 <a id="function-physac-physics-body-orient"></a>
-#### Function: physac:physics-body-orient (object150)
+#### Function: physac:physics-body-orient (body)
 
 `````text
 physics-body's orient accessor
 `````
 
 <a id="function-physac-physics-body-position"></a>
-#### Function: physac:physics-body-position (object48)
+#### Function: physac:physics-body-position (body)
 
 `````text
 physics-body's position accessor
 `````
 
 <a id="function-physac-physics-body-restitution"></a>
-#### Function: physac:physics-body-restitution (object318)
+#### Function: physac:physics-body-restitution (body)
 
 `````text
 physics-body's restitution accessor
 `````
 
 <a id="function-physac-physics-body-shape"></a>
-#### Function: physac:physics-body-shape (object408)
+#### Function: physac:physics-body-shape (body)
 
 `````text
 physics-body's shape accessor
 `````
 
 <a id="function-physac-physics-body-static-friction"></a>
-#### Function: physac:physics-body-static-friction (object270)
+#### Function: physac:physics-body-static-friction (body)
 
 `````text
 physics-body's static-friction accessor
 `````
 
 <a id="function-physac-physics-body-torque"></a>
-#### Function: physac:physics-body-torque (object126)
+#### Function: physac:physics-body-torque (body)
 
 `````text
 physics-body's torque accessor
 `````
 
 <a id="function-physac-physics-body-use-gravity"></a>
-#### Function: physac:physics-body-use-gravity (object342)
+#### Function: physac:physics-body-use-gravity (body)
 
 `````text
 physics-body's use-gravity accessor
 `````
 
 <a id="function-physac-physics-body-velocity"></a>
-#### Function: physac:physics-body-velocity (object66)
+#### Function: physac:physics-body-velocity (body)
 
 `````text
 physics-body's velocity accessor
 `````
 
 <a id="function-physac-physics-shape-body"></a>
-#### Function: physac:physics-shape-body (sb-kernel:instance)
+#### Function: physac:physics-shape-body (instance)
 
 `````text
 polygon-shape's body accessor.
 `````
 
 <a id="function-physac-physics-shape-radius"></a>
-#### Function: physac:physics-shape-radius (sb-kernel:instance)
+#### Function: physac:physics-shape-radius (instance)
 
 `````text
 polygon-shape's radius accessor.
 `````
 
 <a id="function-physac-physics-shape-transform"></a>
-#### Function: physac:physics-shape-transform (sb-kernel:instance)
+#### Function: physac:physics-shape-transform (instance)
 
 `````text
 polygon-shape's transform accessor.
 `````
 
 <a id="function-physac-physics-shape-type"></a>
-#### Function: physac:physics-shape-type (sb-kernel:instance)
+#### Function: physac:physics-shape-type (instance)
 
 `````text
 polygon-shape's type accessor.
 `````
 
 <a id="function-physac-physics-shape-vertex-data"></a>
-#### Function: physac:physics-shape-vertex-data (sb-kernel:instance)
+#### Function: physac:physics-shape-vertex-data (instance)
 
 `````text
 polygon-shape's vertex-data accessor.
@@ -266,14 +261,14 @@ Shatters a polygon shape physics body to little physics bodies with explosion fo
 `````
 
 <a id="function-physac-polygon-data-normals"></a>
-#### Function: physac:polygon-data-normals (sb-kernel:instance)
+#### Function: physac:polygon-data-normals (instance)
 
 `````text
 polygon-data's normals accessor.
 `````
 
 <a id="function-physac-polygon-data-positions"></a>
-#### Function: physac:polygon-data-positions (sb-kernel:instance)
+#### Function: physac:polygon-data-positions (instance)
 
 `````text
 polygon-data's positions accessor.
