@@ -5,7 +5,7 @@
 
 Welcome to @code{cl-physac}!!
 
-@code{cl-physac} is a small 2D physics engine that binds the functions from @link[:address "https://github.com/victorfisac/Physac/tree/master"]{Physac}. The engine uses a fixed time-step thread loop to simluate physics. A physics step contains the following phases: get collision information, apply dynamics, collision solving and position correction. It uses a very simple struct for physic bodies with a position vector to be used in any 3D rendering API.
+@code{cl-physac} binds the functions from @link[:address "https://github.com/victorfisac/Physac/tree/master"]{Physac}. The engine uses a fixed time-step thread loop to simluate physics. A physics step contains the following phases: get collision information, apply dynamics, collision solving and position correction. It uses a very simple struct for physic bodies with a position vector to be used in any 3D rendering API.
 
 @subheader{Installation}
 
